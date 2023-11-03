@@ -8,6 +8,6 @@ export default {
       },
     },
   },
-  plugins: ["prettier-plugin-tailwindcss", require("daisyui")],
+  plugins: ["prettier-plugin-tailwindcss"],
   darkMode: "class",
 };
