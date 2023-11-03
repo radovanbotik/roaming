@@ -10,7 +10,7 @@ const Hero = () => {
   const findCountry = userSearch => {
     const result = destinationsData.find(country => {
       //   return country.country === userSearch;
-      return country.country.toLowerCase().startsWith(userSearch.trim());
+      return country.country.toLowerCase().startsWith(userSearch.trim().toLowerCase());
     });
     setDestination(result);
   };
