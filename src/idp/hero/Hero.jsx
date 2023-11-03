@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <section className="bg-gray-800 text-gray-100">
-      <div className="container mx-auto flex flex-col items-center px-4 py-16 md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
+      <div className="container mx-auto flex flex-col items-center px-4 py-16 md:py-24 md:px-10 lg:px-24 xl:max-w-3xl">
         <div>
           <h1 className="text-4xl text-center font-bold leading-none sm:text-5xl">
             AT&T

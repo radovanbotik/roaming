@@ -15,9 +15,9 @@ const Form = props => {
   return (
     <div className="flex w-full rounded-md min-h-full flex-1 flex-col justify-center px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-        <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight">Look up destination</h2>
+        <h2 className="lg:mt-10 text-center text-2xl font-bold leading-9 tracking-tight">Look up destination</h2>
       </div>
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="lg:mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form
           className="space-y-6"
           onSubmit={e => {
