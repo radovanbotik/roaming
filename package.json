@@ -1,7 +1,7 @@
 {
   "homepage": "https://radovanbotik.github.io/roaming",
   "name": "attpedia",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
