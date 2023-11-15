@@ -30,9 +30,9 @@ const keys = Object.keys(letterKey);
 const Table = props => {
   const { setDestination, setOpen } = props;
   return (
-    <div className="container p-2 mx-auto sm:p-4 dark:text-gray-100">
+    <div className="container p-2 mx-auto sm:p-4 dark:text-gray-100 ">
       <h2 className="mb-4 text-2xl font-semibold leading-tight">Destinations</h2>
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto overflow-y-auto max-h-[54rem] no-scrollbar">
         <table className="p-6 w-full text-xs text-left  table-fixed">
           <colgroup>
             <col className="w-10" />
@@ -45,13 +45,13 @@ const Table = props => {
           </colgroup>
           <thead>
             <tr className="dark:bg-gray-700">
-              <th className="p-3 whitespace-nowrap">A-Z</th>
-              <th className="p-3 break-words">Destination</th>
-              <th className="p-3 break-words">Select Unlimited Domestic Plans</th>
-              <th className="p-3">International Day Pass®</th>
-              <th className="p-3">Pay-Per-Use</th>
-              <th className="p-3">Available Technology</th>
-              <th className="p-3">
+              <th className="p-3 whitespace-nowrap top-0 sticky bg-black">A-Z</th>
+              <th className="p-3 break-words  top-0 sticky bg-black">Destination</th>
+              <th className="p-3 break-words top-0 sticky bg-black">Select Unlimited Domestic Plans</th>
+              <th className="p-3 top-0 sticky bg-black">International Day Pass®</th>
+              <th className="p-3 top-0 sticky bg-black">Pay-Per-Use</th>
+              <th className="p-3 top-0 sticky bg-black">Available Technology</th>
+              <th className="p-3 top-0 sticky bg-black">
                 <span className="sr-only">Edit</span>
               </th>
             </tr>
@@ -69,7 +69,15 @@ const Table = props => {
 
                       <>
                         <td className="px-3 py-2">
-                          <p>{country.country}</p>
+                          <p
+                            className="underline cursor-pointer"
+                            onClick={e => {
+                              setDestination(country);
+                              setOpen(true);
+                            }}
+                          >
+                            {country.country}
+                          </p>
                         </td>
                         <td className="px-3 py-2">
                           <span>{country.sudp ? "Yes" : "No"}</span>
