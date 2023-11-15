@@ -6,7 +6,7 @@ const List = props => {
   return (
     <section className=" text-gray-100 ">
       {/* add container */}
-      <div className=" mx-auto flex flex-col items-center px-4 py-4 md:py-8 md:px-10 lg:px-8 xl:max-w-6xl ">
+      <div className="relative container mx-auto flex flex-col items-center px-4 py-4 md:py-8 md:px-10 lg:px-8 lg:max-w-6xl xl:max-w-6xl z-10">
         <Table setDestination={setDestination} setOpen={setOpen} />
       </div>
     </section>
