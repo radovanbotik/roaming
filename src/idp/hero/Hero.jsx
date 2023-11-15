@@ -16,8 +16,8 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-gray-800 text-gray-100">
-      <div className="container mx-auto flex flex-col items-center px-4 py-16 md:py-24 md:px-10 lg:px-24 xl:max-w-3xl">
+    <section className="bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900  text-gray-100 ">
+      <div className="container mx-auto flex flex-col items-center px-4 py-16 md:py-24 md:px-10 lg:px-24 xl:max-w-3xl z-10 relative">
         <div>
           <h1 className="text-4xl text-center font-bold leading-none sm:text-5xl">
             AT&T

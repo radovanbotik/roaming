@@ -10,7 +10,7 @@ const Card = props => {
   const { country, idp, sudp, ppu, services, technology } = props.destination;
 
   return (
-    <div className="bg-[#e0e0e0]  max-w-md p-8 mx-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+    <div className="bg-[#e0e0e0] max-w-md p-8 mx-auto rounded-lg dark:bg-gray-900 dark:text-gray-100 relative">
       <div className="flex justify-between space-x-8">
         <Destination destination={country} />
         <Roaming idp={idp} sudp={sudp} ppu={ppu} />
